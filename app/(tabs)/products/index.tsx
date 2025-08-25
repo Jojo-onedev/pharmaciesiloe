@@ -324,12 +324,6 @@ export default function ProductsScreen() {
                       >
                         <Ionicons name="trash-outline" size={18} color="#fff" />
                       </TouchableOpacity>
-                      <TouchableOpacity 
-                        style={[styles.actionButton, styles.addToCartButton]} 
-                        onPress={(e) => handleAddToCart(e, product.id)}
-                      >
-                        <Ionicons name="cart" size={18} color="#fff" />
-                      </TouchableOpacity>
                     </View>
                   </View>
                 </View>
@@ -689,14 +683,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     color: '#2E7D32',
-  },
-  addToCartButton: {
-    backgroundColor: '#2E7D32',
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   // Styles pour la modale
   modalContainer: {

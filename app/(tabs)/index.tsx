@@ -9,7 +9,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
-          source={require('../../assets/images/icon.png')}
+          source={require('../../assets/images/image.png')}
           style={styles.logo}
         />
         <Text style={styles.title}>Bienvenue sur</Text>
@@ -93,5 +93,6 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 8,
     backgroundColor: '#2E7D32',
+    color: 'white',
   },
 });
