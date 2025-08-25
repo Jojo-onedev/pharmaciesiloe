@@ -1,9 +1,0 @@
-targets:
-  $default:
-    builders:
-      json_serializable:
-        generate_for:
-          - lib/models/*.dart
-      hive_generator:
-        generate_for:
-          - lib/models/*.dart

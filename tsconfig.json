@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "paths": {
+      "@/*": [
+        "./"
+      ],
+      "@/components/*": [
+        "./components/*"
+      ],
+      "@/hooks/*": [
+        "./hooks/*"
+      ],
+      "@/constants/*": [
+        "./constants/*"
+      ],
+      "@/context/*": [
+        "./context/*"
+      ],
+      "@/types/*": [
+        "./types/*"
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    "types": [
+      "node",
+      "react",
+      "react-native",
+      "jest"
+    ],
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/**",
+    "**/.expo/**",
+    "**/@react-navigation/native/**",
+    "**/expo-intent-launcher/**"
+  ],
+  "extends": "expo/tsconfig.base"
+}
